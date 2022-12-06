@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./Images/R.png" id="logo"/>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#my-projects">Projects</a></li>
+                    <li><a href="#my-contact">contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text-img">
+                <div id="header-bg-img"></div>
+                <div class="header-text">
+                    <p>Frontend Developer</p>
+                <h1>Hi, I am <span>Rista </span>Chaudhary<br/> from India</h1>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- .......about...... -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+               <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p class="about-col-2-first-p"> Please, go through the following tab links to know more about my skills, <br/>experience and education.</p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links " onclick="opentab('experience')"> Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React Js</li>
+                            <li>Bootstrap</li>
+                            <li>Node Js</li>
+                            <li>ExpressJs</li>
+                        </ul>
+                    </div>
+                   <div class="tab-contents tab-content-parent-div" id="experience">
+                    <div class="tab-contents1 tab-content-child">
+                        <h3>Web Development</h3>
+                        <p>Tiapollo Technologies Pvt. Ltd., Virtual</p>
+                        <p>07/2021 - 06/2022,</p>
+                        <h2>Achievements/Tasks</h2>
+                        <ul>
+                           <li>Collaborate With UX designer to <br/>ﬁnalize website design.</li>
+                           <li>Managed team of 2 members</li>
+                           <li>Build and Developed Website using reactjs and css</li>
+                           <li>Worked on APIs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents1 tab-content-child">
+                        <h3>Web Development</h3>
+                        <p>SatyaGanga Competiton Classes</p>
+                        <p>10/2020 - 05/2021,</p>
+                        <h2>Achievements/Tasks</h2>
+                        <ul>
+                           <li>Collaborate With UX designer to ﬁnalize website design.</li>
+                           <li>Managed team of 2 members</li>
+                           <li>Build and Developed Website using reactjs and css</li>
+                           <li>Worked on APIs</li>
+                        </ul>
+                    </div>
+                   </div>
+                   <div class="tab-contents tab-contents-education" id="education">
+                    
+                        <h5>05/2012 - 05/2015,</h5>
+                        <h3>B.SC. LifeSciences</h3>
+                            <h4>Gargi College (Delhi University)</h4>
+                    
+                   </div>
+                </div>
+                <div class="about-col-1">
+                    <div class="blob blob-2">
+                        <img src="./Images//blob_4.svg" alt="" srcset="">
+                    </div>
+                    <img class="about-img" src="./Images/photo1664867771-removebg-preview.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .....................My Projects................. -->
+    <div id="my-projects">
+        <div class="container">
+            <h1>My Projects</h1>
+            <div class="my-project-list-container">
+                <div class="project" style="--project-img-url:url('./Images/myntra.jpg')">
+                    <img src="./Images/myntra.jpg" class="my-project-img"/>
+                    <div class="layer">
+                        <h3>Myntra Website</h3>
+                        <p>This is Myntra website and it is responsive.
+                            Tech used in this app is React js, bootstrap, slick slider, REST API.
+                        </p>
+                        <a href="https://myntra.ristachaudhary.com/" target="_blank">
+                            <img src="./Images/link.png" class="icon"/>  </a>
+                    </div>
+                  </div>
+              <div class="project" style="--project-img-url:url('./Images/tiapollo.png')">
+                <img src="./Images/tiapollo.png" class="my-project-img"/>
+                <div class="layer">
+                    <h3>Tiopollo Website</h3>
+                    <p>This is Tiapollo website created by me and it is responsive.
+                        Tech used in this app is React js and bootstrap.
+                    </p>
+                    <a href="https://tiapollo.ristachaudhary.com/" target="_blank">
+                        <img src="./Images/link.png" class="icon"/>  </a>
+                </div>
+              </div>
+              <div class="project" style="--project-img-url:url('./Images/supplymint.png')" >
+                <img src="./Images/supplymint.png" class="my-project-img"/>
+                <div class="layer">
+                    <h3>Supplymint Website</h3>
+                    <p>This is a responsive webpage which is part of my assignment.
+                        Tech used in this app is React js and bootstrap.
+                    </p>
+                    <a href="https://supplymint-responsive-website.ristachaudhary.com/" target="_blank">
+                        <img src="./Images/link.png" class="icon"/>  </a>
+                </div>
+              </div>
+             
+            </div>
+        </div>
+
+    </div>
+    <!-- ...........Contact............... -->
+    <div class="contact" id="my-contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>rista.chaudhary.dev@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9818740023</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Rista-chaudhary" target=”_blank” ><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rista-chaudhary-630a25237/" target=”_blank” ><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://blog.ristachaudhary.com/" target=”_blank” ><i class="fa-brands fa-blogger"></i></a>
+                        <a href="mailto:rista.chaudhary.dev@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    
+    
+                    </div>
+                    <a href="Images/Rista's Resume.pdf" download class="btn2"> Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name ="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required/>
+                        <input type="email" name="Email" placeholder="Your Email" required/>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2" >Submit</button>
+
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+              
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Rista Chaudhary
+            </p>
+        </div>
+    </div>
+    
+    
+    <script src="main.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxRMYrt4CYnJ-dLWuTO69pTWOVeXtA1XgtNqTysNiFh-mPGHY_HKCMs8nLTXYQJUZrX/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
